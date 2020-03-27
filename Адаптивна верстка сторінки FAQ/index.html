@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Test site</title>
+</head>
+<body>
+    <div class="layer">
+        
+        <div class="modal-window">
+            <div class="close-modal">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="33px" height="33px">
+                    <path fill-rule="evenodd"  fill="rgb(29, 58, 93)"
+                    d="M0.646,1.354 L1.354,0.647 L32.354,31.647 L31.646,32.354 L0.646,1.354 Z"/>
+                    <path fill-rule="evenodd"  fill="rgb(29, 58, 93)"
+                    d="M1.354,32.354 L0.646,31.647 L31.646,0.647 L32.354,1.354 L1.354,32.354 Z"/>
+                </svg>
+            </div>
+
+            <h3 class="modal-title mb-3">I have received two invoices for my electricity contract - what does that mean?</h3>
+
+            <div class="modal-info">
+                <p>If you have switched electricity contracts through us at My Services, it always means that your previous electricity agreement has been terminated in connection with the exchange, since you cannot have two active electricity trading agreements at the same address.<br>
+                Why did you then receive two invoices?</p>
+                <p>Well, when it comes to electricity contracts it is always divided into 2 parts, electricity grids and electricity trading.
+                    Power grids are always connected to the area where you live and can never be changed.</p>
+                <p>You always get an invoice for your electricity grid.</p>
+                <p>Electricity agreement is the agreement you can exchange between different suppliers and this is also the one that you have changed through us at My Services.</p>
+                <p>You always get an invoice for your electricity trade.<p>
+                <p>If you previously received an invoice, it means that you probably had both your electricity grid and your electricity deal with the same supplier.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="close">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <ul class="top-mobile-menu">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">How it Works</a></li> 
+         </ul>
+
+         <button class="login">
+            <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="25" viewBox="0 0 28 25">
+                <image id="Layer_9_copy_3" data-name="Layer 9 copy 3" width="28" height="25" xlink:href="data:img/png;base64,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"/>
+            </svg>                          
+            Login with BankId
+        </button>
+    </div>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row top-nav">
+                <div class="menu-button">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="main-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="175" height="31.5" viewBox="0 0 350 63">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              font-size: 50px;
+                              font-family: Muli;
+                              font-weight: 600;
+                            }
+                      
+                            .cls-2 {
+                              fill: #3392c9;
+                            }
+                      
+                            .cls-2, .cls-3 {
+                              stroke: #fff;
+                              stroke-linejoin: round;
+                              stroke-width: 4px;
+                            }
+                      
+                            .cls-3 {
+                              fill: #4cbf92;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <text id="uppsägning" class="cls-1" x="74.671" y="45.848">uppsägning</text>
+                        <rect id="Rounded_Rectangle_4_copy" data-name="Rounded Rectangle 4 copy" class="cls-2" x="4" y="4" width="37.469" height="36.75" rx="6" ry="6"/>
+                        <path id="Rounded_Rectangle_4" data-name="Rounded Rectangle 4" class="cls-3" d="M160.057,65.013H178.07c2.388,0,15.132,12.023,15.132,14.411V97.438a4.323,4.323,0,0,1-4.324,4.322H160.057a4.322,4.322,0,0,1-4.323-4.322v-28.1A4.322,4.322,0,0,1,160.057,65.013Z" transform="translate(-133 -43)"/>
+                      </svg>                      
+                </div>
+
+                <ul class="top-menu">
+                   <li><a href="">About Us</a></li>
+                   <li><a href="">Security</a></li>
+                   <li><a href="">How it Works</a></li> 
+                </ul>
+
+                <a class="login-top" href="">
+                    <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.059" height="26" viewBox="0 0 57 51">
+                        <image id="Layer_9_copy" data-name="Layer 9 copy" width="57" height="51" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAADDklEQVRIiZWWa2iOYRjHfzsgM0w5ZGTlMIZJJpIiNI0aQiHHMpTDB4pCSvGFIikfHMohKaL4IClyXhapYYhtGEYrx9Gc6dL/6X3e3c9zv/avtz27ruu+r/s63Nf9TyvaXUELcAXoBrQBWgNfgR+h5d+Bt8AL4CFwDbjefPvMFjjMA8Y40tS4A2wDTgSW6TFLsoGFwCo5MwzR31vAeKAfMAWod1YnYxhwHDiQKtINwHp9fwP2AQX6f4bSZ6gGVgK5zg4uFgOfgDVxkdqpXgOHgIOSBRHvVU0N64BiZ3U8VlvG4iKtBSqBMuCXZMHmk4A0IEe1aimWhZ1mAfmq5zygBNgDHAaagK3qgXPq2p86iGXgj6LP10GzPQcpCl+ZBXIQhQ9Apwh5FHoBN4HuETpDTbimBY46gceOJB51ylAc0sNOC2OMDFWOxA/fNWoKO+3nqBN45Ej86OHR1gdOO4SuRBQqI2Q+zPLo7gdO80J3Lwo1EbI4bAQGx+gMZ4Mr42ui98BzR5qMjnYVgEXAfEebgNX6QuDU10R1zV6S5igFjqpEqbCC0MDv6zF+4kiSMfI/HZ4CToed9nZMEkjVRP0diYtyYGYgTdcc9TmtdiTJGOBIknEMGB2WmNNBQGfHNIFnjiSB9p5OrdJondtcYY3UU3X7LVlbUZIM0Q/fdWmlRrP39LOyckks4bZjHXJqyrWaIsZ7bugQGeI7PuSKXdiAb4iwy9Hgt8M9BRpRegtFJ4p1Xy8CXeTQIu6qDbL0ZGXqXhoqNAwaNFysTJv01E0EjgAP1IzvFNw/pwO1oFxRf1HUZ8TkLH2j9E426md0Zbo2r5VjGyJ91CPovS1VT4wF3gDbzSYz1LnDRaLqZHhPhkuBoSJjxnF2ApuBOcArYLbWj1PkJXp/jVsZrHuvKiDrn3YW6VQplwCXgRHiQZYqYwgGS7PZ7QD2S2Y1N6YQsAD7NljqLUPBox/UfZoCuWuRWtMYDzqpkyxXA0yWc9vUFlrUVoIJ6mj7vVSEu4AtwEcRuvOqv32bM2OQNpHKAP4CjiehR2HmuUQAAAAASUVORK5CYII="/>
+                    </svg>              
+                    Login with BankID            
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main-screen">
+            <div class="row">
+                <div class="col">
+                    <h1 class="faq-title mb-5 mt-5">Frequently Asked Questions</h1>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block-info p-4 mb-4">
+                        <div class="block-title mb-4">
+                            <span class="block-logo mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                                    <image id="_456185-200" data-name="456185-200" width="30" height="30" xlink:href="data:img/png;base64,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"/>
+                                </svg>
+                            </span>
+                            <h2 class="block-title">Subscriptions</h2>
+                        </div>
+    
+                    <a href="" class="info-link mb-3">What does it mean to cancel a subscription via My Services?</a>
+                    <a href="" class="info-link mb-3">What subscriptions can I cancel through My Services?</a>
+                    <a href="" class="info-link mb-3">How do I know that the subscriptions I cancel through My Services are actually terminated?</a>
+                    <a href="" class="info-link mb-3"> What happens if I have a binding period left when I cancel a subscription via My Services?</a>
+                </div>
+            </div>
+    
+                <div class="col-md-6">
+                    <div class="block-info p-4 mb-4">
+                        <div class="block-title mb-4">
+                            <span class="block-logo mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="28" viewBox="0 0 22 28">
+                                    <image id="_101939-200" data-name="101939-200" width="22" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAA4CAYAAABkHwH1AAAD70lEQVRoge2aTWxVRRTHf+/11WqpJYXELxaaECEhyoLERMTEKCYVghtiIGxYwEJXYFK7oCs2sALErjTxY2GMbdCdiSRI+IgYjC4MIQRYqZGoyFeL1tZ+PHLsf8Lw5r55D+67HRb9J5N77zn3zv3PuWfOnZkzpQ3HBhGeAXYBrwI9wKTkZWAE+FvyTmCG/CgB08CfQAV4BKiq1ja9/yfgPeALdBMieMR7/Q3gAZ2PA4+q1OryYApoB5aqjpsyjDViAngQeFFlP/COKbuBr/XANqBLFuzyzvdIv7FGl6d0ewY4r2tX30JgAbAG+B3oA9Ya2Tdk4QPAJ8A/qqDqfZZLnpV9XZ6CXMvwr/eFnM4s/x2wSdf9RnK5Lr7ScYta6eN1z5daCXOn/4DHgTcz6h0CvtX58oqc3G/RpxFS44EkH8bVkR4D3s+o6ZQ69/+Wrng9u13H67LsTq8BK4AdqvBEUOW940n55ikZyWEr8IKs7jBTyXhNt26qbWmHPtXS4Il8+AFYp2jg8LTI3oEsslNeCKl68reA3Rn+7BryUCBtjKrI1qInkNQh66PNI2G+/YdKEpQjL7VWv6Q4Z59orE6YMt3B4OkC0MiyHQrSRvS3QDvbOZYAiwNNArJTOtofbG+ghWXAhZpeWxhibuBjLJDM4rqOpUBTABpZ1pHYrCjgD2AsmD+l82rwZAKyjtzzKvXQWUfeUsTImlVPayAxFWhvo0OjpqRkDVeAQ4E0EZrtYPNk7xaN3GChN96dC1wGfq73nhhZC0e9wHCgKQ7HgFfq1R4jazgLfBxIi0N0rBwja6HrHLA90CRCjGxVM4S+QNNamJ8ONPMXjJFFCx/bAmnrMdBMjTGyJc14i4gGC7w530SzY4sYWTTauhhIEyH2U7DWrs+YGbSibA7e1gLLjhRk2WuBpAnEyJY0n5/LP1gUMbJoftUbSPOjzXPBUeDzvGTNt14GPgo0rcdQ3jhrbnBcixtFYrRVocum3x8E0kSIha77DvNki8I82aIwT/YeMKwpVHQ1slGcLQqLvMHMu1r1mWyUDExB9gnl1Q4D3wNvA78AzwF/BXd7SEHW1nJ/BF5T+bUZoiTy2Ssid0ZL/KuaIUpCnzWs1prv1UBTB1lkXfq86AXisciK+mggqUPWEs0PKwM+ncBVbLa7MpDWkHVp0S5Nk78M7p57tPtvrHiWc4p+7apIBbfDo6QQ5/Ia5UpGBnwwIdEsOH6VsvJYaOvJ/QiXeDlfVs5gUgtw27W041BKVJCLrnGbeYB9FQXm9drQ86HKDfnwnCTjMmDZIUtwu360DzjqOtc3wLPAZ9q6ZNZNRdRg6Srb5XFSe3j6AW4BdJre1OyrLg0AAAAASUVORK5CYII="/>
+                                  </svg>                                                    
+                            </span>
+                            <h2 class="block-title">Ordering</h2>
+                        </div>
+    
+                        <a href="" class="info-link mb-3">What does it mean to cancel a subscription via My Services?</a>
+                        <a href="" class="info-link mb-3"> What subscriptions can I cancel through My Services?</a>
+                        <a href="" class="info-link mb-3">How do I know that the subscriptions I cancel through My Services are actually terminated?</a>
+                        <a href="" class="info-link mb-3">What happens if I have a binding period left when I cancel a subscription via My Services?</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="block-info p-4 mb-4">
+                        <div class="block-title mb-4">
+                        <span class="block-logo mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="31" viewBox="0 0 25 31">
+                                <image id="_2562460-200" data-name="2562460-200" width="25" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA9CAYAAAAEXoFnAAAHfElEQVRoge2aC5CWUxjHf7ttMXIrkrtSKEqRTXKP2AjLjhmSSy4VKgoZlTurmXKJikq6KA1D5F6pbORWQkmaXIpQ0mXK3WbN8f2Pzp7zfl/f7vd+u5npP/PO+573nPOe85zznOc55/+8OR1nPUyWUQC8ns0mcoM38aIf8Cpwy/9VCDPF9wI5QDEwJCgRE7IhxNHAXKCn974X8AGQH9TIEHEK0Qh4DHgPOErvXgBaAy8rnS9BHgUODL5QScQhhOnwMOBzoJvelQJ9gXM1K2dpXfyt/O7AYuARoFV1CdEA6AGUqJPXAHnKmwQ0AwZ5dQYChwFPK11L35gHzNI39g9aSgPpmtjaGvHjgXa653llJgDDgXeD2iHaqtMXeTl/AbOBmcDbEvDXoLYHX4gawAHAvsAhGrmWuu8e1E6o0LPAeGBpkAunAZcDo4HpQW6ijYuBIqBJkAurgUXAJ8CnwBJgBbDcUc1/hbhLI7sbUEcCpMI8deg14K0k5Q4GBqiDFkbQe5IIi/pwBnCqYxiS4VtgPbDGzJwRwny0cZLC3wDLZHE+lGVZFpTajHzp+SVBzmaMlSGYF+RsRkNZtVYy2Sa9X1AqgaV5mp7GmqKJwCqpyXe6bwqqlceusj6dpT4uTGefBC4Frtb7y3RN1Toy5ne9V+9rXdYI5En19pHa1dd6Mqq/wl2cRjX6B12MhvnYyZr+DhLEolSdGyx9Nnhfi/5GCWvW3um61mlv9Yqs1PcRLZbqW+aapncH6CpnYXYIqiaQq8L5mt7jNMU1vHKmgac0m8uDryQWppmBO4BOGslDtQ4v1FUqlTUDOl/mu9wijuqvK0SOV8g21CSFd/1So/g8MCPIjcYy7aWKtYiNQyxQG3kyv229NpZodidF9de39S4ukLq4WKfRmQO8KZueCd7QlSPrdLIEaO2oaCNdpZ4Q/yGVEKt0XwvcDiwEPgI2BCUzR5kGxA7KzsARQHPgTqCu058AqYSwMNM5NHibXWzQlqZElq1uqtbS2TvVCt5ULbbYfrZPdlWCbUJsLdgmxNaC6hZiS1vutFCdQgxzWBF/y1MhVJcQE3Q8RQRCzaBEBVDVQtTUqdCerc025hjgz6BkBZDOtiMu7KmzQHN9b6oOU4YcyAhVNRPNdD6wAowR0ZyxAMQkRAsxfQ2DnATa6Ty9l9LFYkBiQ6bqZFTkYz3vrXOAi0466Vn0kFWKFZnOhKFMRuo5X1ysxQ2eAEXZEIAYZuIv8a+GiThRz9NEJAxWmY0iE+YEtWNCKiHsLEUd0n101NnZEHDPOXmG5GqvM3JlYdtPqjW5jrfcEr+UCj9rtF3M1xEzEwFclHlp29+cXEfSHb1CP+neIIKeiYLZQlyn97PlxNZElKsIaqp9Ir61kxUmV0QAjgm0sId2wwsVptmwYae7AKdk6oWFcxzWw2dWbH/X5irYgRZnHaeQ4ZN+1PPA4PPJMVb0Shy4T9/4UR7eYneR1gaLcxULMNje41I3KdqDuFo/aJJtDHKI7r7emjX93E7PM3JFi9gR7+V1bJwYccSjdqoiAS5Qe4jHHefl26DmSkN52oVteSWfQjQ4E/hFzxOVziYKHKbv14j2DFPYRs8m5ldmbe+DwB96fsKrtFb0osXL4k+zgbMVvLFoF2GVbP9+Ax7CcSDGzvfR8yGK6LiY662XyYqAxomrgCnO9zpIlVwMdNZJbxvPc73gcNHqKE7hk8nTZTrt9tnEoh+ISYhBzh5skwbM/x/EmNub9WzW6Qib4bvyQqeTL+kc4GKm9HGl3vUWq+37mHRRX521i3i1nKQfpGyp7T7yP+XU2RfiB2f7YPLeceyxxXydIUqUPkUBlPMrKECR6ploEQr5Hi7VddFUeRYFziBGCoGCJVfqeSfFpVt6ZYxJPgm4X2nDWj+jE1tKBlseeLRCxzasPERWZ6VXtpXar610F4XEyiFKCNSI9Rl1tcDaB6USalDoxA4uU7Ay2cnNz1+tGbk+KJkYcaP7uyh9rXYDAZIJgWywtUC1dE7wnSGyKE0dh1RPg1Di+Jw2Wk9jtA6Qz2kqS+ejt0ytPSp0leGJRCohkAUoctJm2h+PILvWaZQ7OnuxE3QQeksqYX3NEvmDzhE+IE+jba1emWZ6VNAzB+kcTydLN20Q/gpgQRIK8hX9QtFfzghFWw1+B25VxPSloGbifL5AkSGDr9TulKBkJYTAoVueV7qZrMiAoGRi9IrllEZqtEcpfU+Sk+JtWndNlZ6s9j4KSkagIkSB8ernATc57+5W4/5+CwXVu4nK6ao/FHwcr8G403l/g1R4i3/XWFSG7RgsVbL2vLV0f2iSP3E2Bm9gD3n82Y5amsE4sjK7gMpSNh+q8/0d9TAm8LMk5tJFH/19YC2f2WbcIguWlvr4yJR3Ktb6eFHpetoRL/R+E0ILdpEcpJ2xKapfkZNjgDhozMXanJ2rzqOOjdd2oZ9M7FhZJmSFCnUZ55cR4iSUX9Dep7v+kzI4Vv/G2kPMci32FumYznSRDVZ8hMxpT0eY5eJhD3K23LEhW/EJs5031sowFGaXa7brX2SlJeAfAhyjDbVeMUkAAAAASUVORK5CYII="/>
+                              </svg>                                                 
+                        </span>
+                        <h2 class="block-title">Security</h2>
+                    </div>
+    
+                    <a href="" class="info-link mb-3">Why do I need Mobile Bank ID to use My Services?</a>
+                    <a href="" class="info-link mb-3">Is It Safe to Use My Services?</a>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid ready mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 ready-block">
+                    <h2>Ready to get started?</h2>
+                    <p>Sign up and start now</p>
+                </div>
+                <div class="col-md-6 col-lg-4 ready-block">
+                    <button class="login">
+                        <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="25" viewBox="0 0 28 25">
+                            <image id="Layer_9_copy_3" data-name="Layer 9 copy 3" width="28" height="25" xlink:href="data:img/png;base64,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"/>
+                        </svg>                          
+                        Login with BankId
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <footer class="pt-5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 mb-4 footer-block">
+                        <h3 class="mb-4">Office</h3>
+
+                        <div class="footer-block-info">
+                            <p>Lorem Address 11</p>
+                            <p>2200 Vasteras</p>
+                            <p>Sweden</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-4 footer-block">
+                        <h3 class="mb-4">Contact</h3>
+
+                        <div class="footer-block-info">
+                            <p>Chat Support</p>
+                            <p>info@unppsagning.se</p>
+                            <p>+45 000 000-2321</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-4 footer-block">
+                        <h3 class="mb-4">Links</h3>
+
+                        <div class="footer-block-info">
+                            <p>How It Works</p>
+                            <p>Security</p>
+                            <p>FAQ</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-4 footer-block">
+                        <h3 class="mb-4">Company</h3>
+
+                        <div class="footer-block-info">
+                            <p>About us</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col super-down">2020 Uppsagning Company. All rights reserved.</div>
+                </div>
+            </footer>
+        </div>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
