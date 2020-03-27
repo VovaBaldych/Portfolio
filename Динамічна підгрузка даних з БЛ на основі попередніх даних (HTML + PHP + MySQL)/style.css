@@ -1,0 +1,122 @@
+body
+{
+    width: 100wv;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: rgb(197, 179, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.preloader
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(70, 61, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease;
+    /* display: none; */
+}
+.preloader-content
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.preloader_first,
+.preloader_second,
+.preloader_third
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: 1s linear;
+}
+.preloader_first
+{
+    border-bottom: 3px solid rgb(173, 206, 111);
+    animation-name: first;
+}
+.preloader_second
+{
+    border-right: 3px solid rgb(206, 125, 111);
+    animation-name: second
+}
+.preloader_third
+{
+    border-top: 3px solid rgb(111, 176, 206);
+    animation-name: third
+}
+
+@keyframes first {
+    0% {transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);}
+    100% {transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);}
+}
+@keyframes second
+{
+    0% {transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);}
+    100% {transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);}
+}
+@keyframes third
+{
+    0% {transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);}
+    100% {transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);}
+}
+
+
+#form
+{
+    /* position: fixed; */
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(70, 61, 80);
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Параметры тени */
+}
+#form h2
+{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.selects
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+/* .selects select
+{
+    margin-bottom: 20px;
+    background-color: rgb(197, 179, 207);
+    color: rgb(49, 45, 95);
+    font-size: 1rem;
+    padding: 7px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+} */
+.selects label
+{
+    color: rgb(255, 234, 234);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.ui-menu
+{
+    max-height: 320px;
+}
