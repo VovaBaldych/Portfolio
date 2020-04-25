@@ -1,0 +1,13 @@
+body {
+    background-color: #a1a1a1;
+    margin: 0;
+    padding: 0;
+}
+.main-wrapper {
+    min-height: 100vh;
+}
+.form-signin {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px 10px;
+}

@@ -1,0 +1,31 @@
+<?php
+include('database_connection.php');
+session_start();
+$query = "SELECT * FROM login WHERE user_id != '".$_SESSION['user_id']."'";
+$statement = $connect->prepare($query);
+$statement->execute();
+$result = $statement->fetchAll();
+$output = '<table class="table">
+    <thead>
+        <tr>
+              <th class="w-50">Username</td>
+              <th class="text-center w-20">Online</td>
+              <th class="text-center w-30">Action</td>
+         </tr>
+    </thead>
+    <tbody>';
+foreach($result as $row) {
+    $status = '';
+    $current_timestamp = strtotime(date("Y-m-d H:i:s") . '- 10 second');
+    $current_timestamp = date('Y-m-d H:i:s', $current_timestamp);
+    $user_last_activity = fetch_user_last_activity($row['user_id'], $connect);
+    if($user_last_activity > $current_timestamp) $status = '<span class="badge badge-success">on</span>';
+    else $status = '<span class="badge badge-secondary">off</span>';
+    $output .= '<tr>
+      <td>'.$row['username'].' '.count_unseen_message($row['user_id'], $_SESSION['user_id'], $connect).' '.fetch_is_type_status($row['user_id'], $connect).'</td>
+      <td class="text-center">'.$status.'</td>
+      <td class="text-center"><button type="button" class="btn btn-info btn-xs start_chat" data-touserid="'.$row['user_id'].'" data-tousername="'.$row['username'].'">Start Chat</button></td>
+    </tr>';
+}
+$output .= '</tbody></table>';
+echo $output;
